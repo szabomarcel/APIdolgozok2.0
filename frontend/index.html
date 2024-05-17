@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="dolgozo.js"></script>
+    <title>A felhasználó dolgozok adatai</title>
+</head>
+<body>
+    <div class="container">
+        <h1><img src="https://bddsz.hu/sites/default/files/N%C3%A9vtelen_0.png"class="logo">A felhasználó dolgozok adatai</h1>
+        <form action="#" method="POST" class="row" id="dolgozoForm">
+            <fieldset>
+                <div class="row">
+                    <div class="mb-3 col-4">
+                        <label for="dolgozoid" class="form-label">DolgozóID: </label>
+                        <input type="text" class="form-control" id="dolgozoid" name="dolgozoid" required>
+                    </div>
+                    <div class="mb-3 col-4">
+                        <label for="nev" class="form-label">Név: </label>
+                        <input type="text" class="form-control" id="nev" name="nev" required>
+                    </div>
+                    <div class="mb-3 col-4">
+                        <label for="neme" class="form-label">Neme: </label>
+                        <input type="text" class="form-control" id="neme" name="neme" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-4">
+                        <label for="reszleg" class="form-label">Részleg: </label>
+                        <input type="text" class="form-control" id="reszleg" name="reszleg" required>
+                    </div>
+                    <div class="mb-3 col-4">
+                        <label for="belepesev" class="form-label">Belépésév: </label>
+                        <input type="text" class="form-control" id="belepesev" name="belepesev" numeric required>
+                    </div>
+                    <div class="mb-3 col-4">
+                        <label for="ber" class="form-label">Bér: </label>
+                        <input type="text" class="form-control" id="ber" name="ber" required>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="d-flex justify-content-around">
+                <button type="button" class="btn btn-primary" id="create"><i class="fa-solid fa-plus"> Create</i></button>
+            </div>
+        </form>
+        <div id="dolgozok" class="row">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">`dolgozoid`</h5>
+                    <p class="card-text">név: `nev`</p>
+                    <p class="card-text">neme: `neme`</p>
+                    <p class="card-text">részleg: `reszleg`</p>
+                    <p class="card-text">belépésév: `belepesev`</p>
+                    <p class="card-text">bér: `ber`</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
